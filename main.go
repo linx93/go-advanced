@@ -34,6 +34,8 @@ func main() {
 	testStr1 = fmt.Sprintf("德玛西亚1")
 	linx.Age = 28
 
+	//test push
+
 }
 
 type Stu struct {
