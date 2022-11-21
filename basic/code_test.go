@@ -64,3 +64,34 @@ func Test3(t *testing.T) {
 
 	//for range还是不保证顺序的
 }
+
+func Test4(t *testing.T) {
+
+	//map
+	mapData := map[string]any{"age": 28, "name": "linx", "email": "1824517828@qq.com"}
+	for key, val := range mapData {
+		fmt.Printf("key=%v, val=%v\n", key, val)
+	}
+
+	//数组
+	arr := []int{1, 2, 3, 4, 5, 6}
+	for index, item := range arr {
+		fmt.Printf("index=%v,item=%v\n", index, item)
+	}
+
+	//切片
+	var slice []int = make([]int, 0)
+	slice = append(slice, 1)
+	slice = append(slice, 2)
+	slice = append(slice, 3)
+	slice = append(slice, 4)
+	slice = append(slice, 5)
+	slice = append(slice, 6)
+	for index, item := range slice {
+		fmt.Printf("index=%v,item=%v\n", index, item)
+	}
+
+	//map的循环是不保证顺序的
+	//数组的循环是保证顺序的
+	//切片的循环是保证顺序的
+}
