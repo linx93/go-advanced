@@ -2,10 +2,15 @@ package template
 
 import "fmt"
 
-// WorkTemplate 每天工作搬砖模板
-type WorkTemplate interface {
+type GetUp interface {
 	// GetUp 起床
 	GetUp(name string)
+}
+
+// WorkTemplate 每天工作搬砖模板
+type WorkTemplate interface {
+	//GetUp 起床
+	GetUp
 
 	// GoOut 出门
 	GoOut(name string)
