@@ -78,7 +78,7 @@ func WithVersion(version string) Option {
 }
 
 func (i *Instance) String() string {
-	return fmt.Sprintf("[name=%s,version=%s,createdAt=%d,updatedAt=%d,message=%s,HttpProxyConfig=%v]", i.Name, i.Version, i.CreatedAt, i.UpdatedAt, i.Message, i.HttpProxyConfig)
+	return fmt.Sprintf("Ins[name=%s,version=%s,createdAt=%d,updatedAt=%d,message=%s,HttpProxyConfig=%v]", i.Name, i.Version, i.CreatedAt, i.UpdatedAt, i.Message, i.HttpProxyConfig)
 }
 
 func (i *HttpProxyConfig) String() string {

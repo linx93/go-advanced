@@ -6,6 +6,7 @@ import (
 )
 
 func main() {
+	//1. 参考grpc中创建方式
 	ins := init_code.New()
 	fmt.Println(ins)
 
@@ -14,6 +15,8 @@ func main() {
 		init_code.WithVersion("1.0.0"))
 	fmt.Println(ins1)
 
-	//个人感觉没有java或者kotlin中的方式体验好
+	//2. 参考java中的方式
+	i := init_code.NewIns().SetAge(18).SetName("linx").SetConfig("./config.yaml")
+	fmt.Println(i)
 
 }
