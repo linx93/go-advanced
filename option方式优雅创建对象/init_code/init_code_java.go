@@ -9,7 +9,7 @@ import (
 )
 
 const (
-	DafaultVsersion = "1.0.0"
+	DefaultVersion = "1.0.0"
 )
 
 type Ins struct {
@@ -25,7 +25,7 @@ func NewIns() *Ins {
 	return &Ins{
 		CreatedAt: time.Now().Unix(),
 		UpdatedAt: time.Now().Unix(),
-		Version:   DafaultVsersion,
+		Version:   DefaultVersion,
 	}
 }
 
