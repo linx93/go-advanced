@@ -4,6 +4,7 @@ import (
 	"encoding/csv"
 	"fmt"
 	"os"
+	"time"
 )
 
 //二位数组写入csv
@@ -11,7 +12,8 @@ import (
 var data = [][]string{{"age", "name", "gender"}, {"18", "linx93", "男"}, {"18", "hwm", "女"}}
 
 func main() {
-	file, err := os.Create("test.csv")
+	format := time.Now().Format("20060102150405")
+	file, err := os.Create(fmt.Sprintf("test-%s.csv", format))
 	if err != nil {
 		panic(err)
 	}
