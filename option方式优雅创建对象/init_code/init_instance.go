@@ -16,7 +16,7 @@ type Instance struct {
 	Name      string `json:"name"`
 	UpdatedAt int64  `json:"updatedAt"`
 	CreatedAt int64  `json:"createdAt"`
-	Version   string `json:"version"`
+	Version   string `json:"version" linx:"column:sid;type:like"`
 }
 
 // Option 定义一个option
