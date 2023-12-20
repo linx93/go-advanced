@@ -126,3 +126,16 @@ func Test5(t *testing.T) {
 	//3
 	//总结:代码块中定义的x无论怎么修改，都不会影响到外部
 }
+
+// golang中的rune类型，一般用于字符处理
+// rune其实是int32的别名，  type rune = int32
+func Test6(t *testing.T) {
+	str := "我是linx,我今天很开心"
+	runes := []rune(str)
+	fmt.Println(runes) //[25105 26159 108 105 110 120 44 25105 20170 22825 24456 24320 24515] 其实每一项都是Unicode码点
+	//[25105 26159 108 105 110 120 44 25105 20170 22825 24456 24320 24515]
+	fmt.Println(string(runes[0]))  //我
+	fmt.Println(string(runes[7]))  //我
+	fmt.Println(string(runes[12])) //心
+	fmt.Println(string(runes[5]))  //x
+}
