@@ -134,8 +134,9 @@ func Test6(t *testing.T) {
 	runes := []rune(str)
 	fmt.Println(runes) //[25105 26159 108 105 110 120 44 25105 20170 22825 24456 24320 24515] 其实每一项都是Unicode码点
 	//[25105 26159 108 105 110 120 44 25105 20170 22825 24456 24320 24515]
-	fmt.Println(string(runes[0]))  //我
-	fmt.Println(string(runes[7]))  //我
-	fmt.Println(string(runes[12])) //心
-	fmt.Println(string(runes[5]))  //x
+	fmt.Println(string(runes[0]))  // 我
+	fmt.Println(string(runes[7]))  // 我
+	fmt.Println(string(runes[12])) // 心
+	fmt.Println(string(runes[5]))  // x
+
 }
